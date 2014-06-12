@@ -1,13 +1,10 @@
-require 'sass';
-require 'sass/globbing';
-
 module Slinky
   module SassCompiler
     Compilers.register_compiler self,
                                 :inputs => ["sass", "scss"],
                                 :outputs => ["css"],
-                                :dependencies => [["sass", ">= 3.1.1"]],
-                                :requires => ["sass"]
+                                :dependencies => [["sass", ">= 3.1.1"], ["sass-globbing", ">= 1.1"]],
+                                :requires => ["sass", "sass-globbing"]
 
     def SassCompiler::compile s, file
       syntax = file.end_with?(".sass") ? :sass : :scss
