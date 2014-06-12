@@ -1,4 +1,5 @@
-require 'sass-globbing'
+require 'sass';
+require 'sass/globbing';
 
 module Slinky
   module SassCompiler
