@@ -14,6 +14,7 @@ gem "listen", "~> 2.4"
 # compilation support gems
 gem "haml", "~> 3.1"
 gem "sass", "~> 3.1"
+gem "sass-globbing", "~> 1.1"
 gem "coffee-script", "~> 2.2"
 
 group :development do
