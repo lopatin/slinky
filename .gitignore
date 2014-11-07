@@ -50,4 +50,3 @@ Gemfile.lock
 
 tmp
 
-ext/transitive_closure/Makefile
